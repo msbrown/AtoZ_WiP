@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redactor_v2_slider</title>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+<style>
+      body {
+        padding: 20px;
+      }
+      .file {
+        margin-top: 24px;
+        font-weight: bold;
+      }
+      .text {
+        border-style: solid;
+        border-width: 1px;
+        padding: 20px;
+      }
+      #drop_zone {
+        padding: 20px;
+        border-style: dotted;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+
+</head>
+
+<body>
+  <h1>Rights Redactor </h1>
+  <p> Choose text and have words/rights randomly redacted. </P>
+   <p>
+      <a href="#" id ="sample">Load 'Universal Declaration of Human Rights'</a><br>
+      <a href="#" id ="sampleb">Load 'U.S. Bill of Rights'</a><br>
+      <a href="#" id ="samplec">Load 'Helsinki Accords (excerpt)'</a><br>
+
+  </p>
+  <p>
+      <div id="drop_zone">drag a file</div>
+  <p>
+      <textarea cols=80 rows=10 id="input">Enter some text </textarea>
+      <br>      
+      Percentage of words to redact: <span id = "percent">30</span>% <input id = "percentslider" type="range" min="1" max="100" value ="30"></input></br>
+  </p>
+  <p>
+
+      <button id="submit">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;<button id = "clearText">clear</button>
+  </p>
+
+  <h1 id="unredact">Unredact </h1>
+  <p id ="unredactp">Want them back? Click a word to UN-redact it:</p>
+  <p id = "output"></p>
+
+</body>
+</html>

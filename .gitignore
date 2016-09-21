@@ -1,4 +1,5 @@
 #Specific to this project ##
+/wk1_user-input/
 /core/*
 /java/*
 /launch4j/*
